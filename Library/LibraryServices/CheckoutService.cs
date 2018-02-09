@@ -1,11 +1,11 @@
-﻿using LibraryData;
+﻿using System;
 using System.Collections.Generic;
-using LibraryData.Models;
 using System.Linq;
+using LibraryData;
+using LibraryData.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
 
-namespace LibraryService
+namespace LibraryServices
 {
     public class CheckoutService : ICheckout
     {
@@ -143,7 +143,7 @@ namespace LibraryService
 
         public bool IsCheckedOut(int id)
         {
-            return _context.Checkouts.Where(a => a.LibraryAsset.Id == id).Any();
+            return _context.Checkouts.Any(a => a.LibraryAsset.Id == id);
         }
 
         private DateTime GetDefaultCheckoutTime(DateTime now)
@@ -271,8 +271,7 @@ namespace LibraryService
             var checkout = _context.Checkouts
                 .Include(a => a.LibraryAsset)
                 .Include(a => a.LibraryCard)
-                .Where(a => a.LibraryAsset.Id == id)
-                .FirstOrDefault();
+                .FirstOrDefault(a => a.LibraryAsset.Id == id);
 
             if (checkout == null)
             {
@@ -283,29 +282,11 @@ namespace LibraryService
 
             var patron = _context.Patrons
                 .Include(p => p.LibraryCard)
-                .Where(c => c.LibraryCard.Id == cardId)
-                .FirstOrDefault();
+                .FirstOrDefault(c => c.LibraryCard.Id == cardId);
 
-            return patron.FirstName + " " + patron.LastName;
+            return patron?.FirstName + " " + patron?.LastName;
         }
 
-        public int GetAvailableCopies(int id)
-        {
-            var numberOfCopies = GetNumberOfCopies(id);
 
-            var numberCheckedOut = _context.Checkouts
-                .Where(a => a.LibraryAsset.Id == id
-                         && a.LibraryAsset.Status.Name == "Checked Out")
-                         .Count();
-
-            return numberOfCopies - numberCheckedOut;
-        }
-
-        public int GetNumberOfCopies(int id)
-        {
-            return _context.LibraryAssets
-                .FirstOrDefault(a => a.Id == id)
-                .NumberOfCopies;
-        }
     }
 }
