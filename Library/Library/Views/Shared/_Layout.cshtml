@@ -1,4 +1,5 @@
 ﻿@inject Microsoft.ApplicationInsights.AspNetCore.JavaScriptSnippet JavaScriptSnippet
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,15 +31,7 @@
                 </nav>
             </div>
         </header>
-        <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Lakeview Library</span>
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" asp-controller="Home" asp-action="Index">Home</a>
-                <a class="mdl-navigation__link" asp-controller="Catalog" asp-action="Index">Catalog</a>
-                <a class="mdl-navigation__link" asp-controller="Patron" asp-action="Index">Patrons</a>
-                <a class="mdl-navigation__link" asp-controller="Branch" asp-action="Index">Branches</a>
-            </nav>
-        </div>
+
         <div class="page-content">
             @RenderBody()
         </div>
