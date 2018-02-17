@@ -5,7 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="appsettings.Production.json" />
+    <Compile Remove="Data\**" />
+    <Content Remove="Data\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <None Remove="Data\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Properties\PublishProfiles\LibManSys - Web Deploy.pubxml" />
+    <None Remove="Properties\PublishProfiles\Library20180213045139 - Web Deploy.pubxml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,11 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="appsettings.Production.json" />
+    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
 
 </Project>
