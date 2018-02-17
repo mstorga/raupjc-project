@@ -11,3 +11,6 @@ Funkcionalnosti:
 ∗ Pračenje posudbi knjiga, naknadi za kašnjenje, izgubljenih/pronađenih knjiga
 ∗ Pregleg korisnika (Patrons) knjižnice (dugovanja i ostali podatci)
 ∗ Pregled podružnica (Branches) knižnjice
+
+
+link na stranicu: http://libmansys.azurewebsites.net/
