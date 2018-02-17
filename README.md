@@ -23,5 +23,5 @@
 
 # link na stranicu: http://libmansys.azurewebsites.net/
 za isprobati sve funkcionalnosti možete koristiti: 
-        username: matej.storga@fer.hr
-        pass: 2849mM.
+        username: 'matej.storga@fer.hr'
+        pass: '2849mM.'
