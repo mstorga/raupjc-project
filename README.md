@@ -20,7 +20,7 @@
 
 ∗ Pračenje naknadi za kašnjenje
 
-∗ Pračenje izgubljenih/pronađenih knjiga
+∗ Praćenje izgubljenih/pronađenih knjiga
 
 ∗ Pregleg korisnika (Patrons) knjižnice (dugovanja i ostali podatci)
 
