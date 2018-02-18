@@ -2,13 +2,13 @@
 
 # Sustav za upravljanje knjižnicom
 
-– Sustav za knjižnicu pomoću kojeg  knjižničar upravlja knjižnicom.
-
-– Samo prijavljeni knjižničar može izmjenjivati podatke i pregledavati podatke o korisnicima.
-
-– Pristup pregledu kataloga knjižnice i podružnica (Branches) imaju svi.
+- Sustav za knjižnicu pomoću kojeg  knjižničar upravlja knjižnicom.
 
 - Web stranica sastoji se od kataloga knjiga (Library Catalog), popisa korisnika knjižnice (Patrons) te podružnica knjižnice (Branches)
+
+- Samo prijavljeni knjižničar može izmjenjivati podatke i pregledavati podatke o korisnicima.
+
+- Pristup pregledu kataloga knjižnice i podružnica (Branches) imaju svi.
 
 
 # Funkcionalnosti:
