@@ -1,27 +1,33 @@
 # raupjc-project
 
-# • Sustav za upravljanje knjižnicom
+# Sustav za upravljanje knjižnicom
 
 – Sustav za knjižnicu pomoću kojeg  knjižničar upravlja knjižnicom.
 
-– Samo prijavljeni knjižničar može izmjenjivati podatke.
+– Samo prijavljeni knjižničar može izmjenjivati podatke i pregledavati podatke o korisnicima.
 
 – Pristup pregledu kataloga knjižnice i podružnica (Branches) imaju svi.
 
+- Web stranica sastoji se od kataloga knjiga (Library Catalog), popisa korisnika knjižnice (Patrons) te podružnica knjižnice (Branches)
+
 
 # Funkcionalnosti:
-∗ Mogućnost administracije knjiga (pregledavanje, dodavanje, uređivanje, brisanje)
+∗ Mogućnost pregleda kataloga knjiga
 
-∗ Mogućnost posuđivanja knjiga (red za posudbu ukoliko je knjiga već posuđena)
+∗ Mogućnost posuđivanja knjiga
 
-∗ Pračenje posudbi knjiga, naknadi za kašnjenje, izgubljenih/pronađenih knjiga
+∗ Red za posudbu ukoliko je knjiga već posuđena
+
+∗ Pračenje naknadi za kašnjenje
+
+∗ Pračenje izgubljenih/pronađenih knjiga
 
 ∗ Pregleg korisnika (Patrons) knjižnice (dugovanja i ostali podatci)
 
-∗ Pregled podružnica (Branches) knižnjice
+∗ Pregled podružnica (Branches) knižnjice (adresa, kontakt itd.)
 
 
-# link na stranicu: http://libmansys.azurewebsites.net/
+# Link na stranicu: http://libmansys.azurewebsites.net/
 za isprobati sve funkcionalnosti možete koristiti: 
         username: 'matej.storga@fer.hr'
         pass: '2849mM.'
