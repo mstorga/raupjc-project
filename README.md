@@ -12,6 +12,7 @@
 
 
 # Funkcionalnosti:
+
 ∗ Mogućnost pregleda kataloga knjiga
 
 ∗ Mogućnost posuđivanja knjiga
@@ -22,12 +23,13 @@
 
 ∗ Praćenje izgubljenih/pronađenih knjiga
 
-∗ Pregleg korisnika (Patrons) knjižnice (dugovanja i ostali podatci)
+∗ Pregled korisnika (Patrons) knjižnice (dugovanja i osnovni podatci)
 
-∗ Pregled podružnica (Branches) knižnjice (adresa, kontakt itd.)
+∗ Pregled podružnica (Branches) knižnjice (adresa, kontakt, radno vrijeme, broj knjiga itd.)
 
 
 # Link na stranicu: http://libmansys.azurewebsites.net/
+
 za isprobati sve funkcionalnosti možete koristiti: 
         username: 'matej.storga@fer.hr'
         pass: '2849mM.'
